@@ -53,6 +53,34 @@ img.src = selectedMessage.url;
 
   nameDisplay.textContent = `${selectedPrefix} ${selectedNoun} ${selectedAgentNoun}`;
 }
+function fieldChecker() {
+  const first = firstName.value.trim().toLowerCase();
+  const last = lastName.value.trim().toLowerCase();
+  const fullName = `${first} ${last}`;
+
+  if (first && last) {
+    errorMessage.textContent = ""; 
+
+    const normalizedFullName = fullName.replace(/\s+/g, " ");
+    if (
+      normalizedFullName === "stefani germanotta" ||
+      normalizedFullName === "stefani joanne angelina germanotta"
+    ) {
+      nameDisplay.textContent = "Lady Gaga";
+      message.textContent = "Ra Ra Ah ah ah Roma Romama Gaga Oolala. Want your Bad Romance!";
+      img.src = "https://m.media-amazon.com/images/I/71r-+GSaWuL._AC_UY218_.jpg";
+      return;
+    }
+    generateName(firstName.value, lastName.value);
+  } else {
+    nameDisplay.textContent = "";
+    message.textContent = "";
+    img.src = "";
+    errorMessage.textContent = "Grrrr... A first and last name is needed to make your Little Monster name.";
+img.src="https://m.media-amazon.com/images/I/51+5rwULThL._AC_UY218_.jpg";
+  }
+}
+
 
 
 button.addEventListener("click", () =>{generateName(firstName.value, lastName.value)
