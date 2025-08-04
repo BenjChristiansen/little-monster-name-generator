@@ -80,8 +80,16 @@ function fieldChecker() {
 img.src="https://m.media-amazon.com/images/I/51+5rwULThL._AC_UY218_.jpg";
   }
 }
+button.addEventListener("click", fieldChecker);
 
+firstName.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    fieldChecker();
+  }
+});
 
-
-button.addEventListener("click", () =>{generateName(firstName.value, lastName.value)
-;})
+lastName.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    fieldChecker();
+  }
+});
