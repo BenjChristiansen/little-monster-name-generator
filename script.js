@@ -8,29 +8,66 @@ const nouns = ["Zombie", "Joanne", "Venus", "Sour Candy", "Disco", "Harlequin", 
 const agentNouns= ["Guzzler", "Dingler", "Dribbler", "Slayer", "Killah", "Haunter", "Screecher", "Biter", "Caller", "Romancer", "Lover", "Kisser", "Sinner", "Chaser", "Clapper", "Popper", "Raver", "Drinker", "Hooker", "Bedazzler", "Bumper", "Humper", "Hacker", "Fluffer", "Sniffer", "Smoosher"];
 const messages = [
   {message: "You've given me a million reasons to keep going Little Monster. I love you! XOXO, Joanne.",
-url: "https://m.media-amazon.com/images/I/71In1faVvIL._AC_UY218_.jpg"}, 
+url: "https://m.media-amazon.com/images/I/71In1faVvIL._AC_UY218_.jpg",
+  style: {
+backgroundColor: "pink",
+  color: "black"}}, 
   {message: "Be as free as your hair Little Monster. You free me.",
-  url: "https://m.media-amazon.com/images/I/71VJwUwpOzL._AC_UY218_.jpg" },
+  url: "https://m.media-amazon.com/images/I/71VJwUwpOzL._AC_UY218_.jpg",
+  style: {
+    backgroundColor: "black",
+    color: "white"
+  }},
 {message: "I love you as much as the Papparazzi Little Monster.",
-url:"https://m.media-amazon.com/images/I/91x3Afp9SPL._AC_UY218_.jpg" },
+url:"https://m.media-amazon.com/images/I/91x3Afp9SPL._AC_UY218_.jpg",
+style: {
+backgroundColor: "black",
+color: "white"}},
   {message: "Applause to you Little Monster.",
-  url: "https://m.media-amazon.com/images/I/61hgq6sjUdL._AC_UY218_.jpg"},
+  url: "https://m.media-amazon.com/images/I/61hgq6sjUdL._AC_UY218_.jpg", 
+  style: {
+backgroundColor: "skyblue",
+  color: "black"}},
   {message: "I hope to one day Vanish Into You Little Monster.",
-  url: "https://m.media-amazon.com/images/I/61MQpR6XTtL._AC_UY218_.jpg"},
+  url: "https://m.media-amazon.com/images/I/61MQpR6XTtL._AC_UY218_.jpg",
+  style: {
+backgroundColor:"orange",
+  color: "black"}},
   {message: "There can be 100 people in the room, and 99 don't believe in you, but you just need one to believe in you. I believe in you Little Monster.",
-  url: "https://m.media-amazon.com/images/I/81qGgVs4BWL._AC_UY218_.jpg"}, 
+  url: "https://m.media-amazon.com/images/I/81qGgVs4BWL._AC_UY218_.jpg",
+  style: {
+    backgroundColor: "gold",
+    color: "black"
+  }}, 
   {message: "Bus, club, another club, another club, plane, next place, no sleep!. I do it for you, my fans!",
-  url: "https://m.media-amazon.com/images/I/71VJwUwpOzL._AC_UY218_.jpg"},
+  url: "https://m.media-amazon.com/images/I/71VJwUwpOzL._AC_UY218_.jpg",
+style: {
+  backgroundColor: "black",
+  color: "white"
+}},
   {message: "I need you more than Dope Little Monster.",
-  url: "https://m.media-amazon.com/images/I/612EEsK+nFL._AC_UY218_.jpg"},
+  url: "https://m.media-amazon.com/images/I/612EEsK+nFL._AC_UY218_.jpg", 
+  style: {
+backgroundColor:"royalblue",
+  color: "black"}},
   {message: "Don't you let go of my hand Little Monster. I will always be a fan of yours as much as you are one of mine.",
-  url: "https://m.media-amazon.com/images/I/61ltyxgAZUL._AC_UY218_.jpg"},
+  url: "https://m.media-amazon.com/images/I/61ltyxgAZUL._AC_UY218_.jpg",
+  style: {
+backgroundColor: "gray",
+  color: "black"}},
   {message: "I want your stupid love Little Monster.",
-  url: "https://m.media-amazon.com/images/I/81Le2R1yAgL._AC_UY218_.jpg"},
-  {message: "Rain on Me Little Monster.",
-  url: "https://m.media-amazon.com/images/I/81Le2R1yAgL._AC_UY218_.jpg"}
+  url: "https://m.media-amazon.com/images/I/81Le2R1yAgL._AC_UY218_.jpg",
+  style: {
+    backgroundColor: "hotpink",
+    color: "black"
+  }},
+  {message: "Rain on Me Little Monster",
+  url: "https://m.media-amazon.com/images/I/81Le2R1yAgL._AC_UY218_.jpg",
+  style: {
+    backgroundColor:"hotpink",
+    color: "black"
+  }}
 ]
-
 
 function generateName(first, last) {
   const seed = (first + last).toUpperCase();
