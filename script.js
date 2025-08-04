@@ -3,6 +3,9 @@ const lastName=document.getElementById("last-name");
 const button=document.getElementById("generate-name");
 const
 nameDisplay=document.getElementById("name-display");
+errorMessage=document.getElementById("error-message");
+const message=document.getElementById("message");
+const img=document.getElementById("img");
 const prefix=["The", "Queen", "Countess", "Lord", "Princess", "Doctor", "Supreme", "Baroness", "Madame", "Sassy", "Royal", "Sis", "Count", "Monsieur", "A One", "Madmoisette", "Mister", "Mother", "Father", "Professor", "Lady", "The Incomparable", "Infamous", "Seniorita", "Governess", "Judge"];
 const nouns = ["Zombie", "Joanne", "Venus", "Sour Candy", "Disco", "Harlequin", "Patrizia", "Gucci", "Mayhem", "Shadow", "Dance", "Beast", "Dope", "Swine", "Aura", "Fame", "Pinot Grigio", "Gypsy", "Mary Jane", "Beat", "Celebrity", "Unicorn", "Fashion", "Judas", "Diamond", "Enigma"];
 const agentNouns= ["Guzzler", "Dingler", "Dribbler", "Slayer", "Killah", "Haunter", "Screecher", "Biter", "Caller", "Romancer", "Lover", "Kisser", "Sinner", "Chaser", "Clapper", "Popper", "Raver", "Drinker", "Hooker", "Bedazzler", "Bumper", "Humper", "Hacker", "Fluffer", "Sniffer", "Smoosher"];
@@ -84,6 +87,12 @@ const randomOffset = Math.floor(Math.random() * 10);
 const selectedMessage = messages[indexMessage];
 message.textContent = selectedMessage.message;
 img.src = selectedMessage.url;
+if (selectedMessage.style) {
+  Object.assign(document.body.style, selectedMessage.style);
+} else {
+  document.body.style.backgroundColor = null;
+}
+
   const selectedPrefix = prefix[indexPrefix];
   const selectedNoun = nouns[indexNoun];
   const selectedAgentNoun = agentNouns[indexAgentNoun];
