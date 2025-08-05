@@ -1,7 +1,7 @@
 const firstName=document.getElementById("first-name"); 
 const lastName=document.getElementById("last-name");
 const button=document.getElementById("generate-name");
-const paragraph=document.getElementById("paragraph);
+const paragraph=document.getElementById("paragraph");
 nameDisplay=document.getElementById("name-display");
 errorMessage=document.getElementById("error-message");
 const message=document.getElementById("message");
