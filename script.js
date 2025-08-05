@@ -6,9 +6,24 @@ nameDisplay=document.getElementById("name-display");
 errorMessage=document.getElementById("error-message");
 const message=document.getElementById("message");
 const img=document.getElementById("img");
-const prefix=["The", "Queen", "Countess", "Lord", "Princess", "Doctor", "Supreme", "Baroness", "Madame", "Sassy", "Royal", "Sis", "Count", "Monsieur", "A One", "Madmoisette", "Mister", "Mother", "Father", "Professor", "Lady", "The Incomparable", "Infamous", "Seniorita", "Governess", "Judge"];
-const nouns = ["Zombie", "Joanne", "Venus", "Sour Candy", "Disco", "Harlequin", "Patrizia", "Gucci", "Mayhem", "Shadow", "Dance", "Beast", "Dope", "Swine", "Aura", "Fame", "Pinot Grigio", "Gypsy", "Mary Jane", "Beat", "Celebrity", "Unicorn", "Fashion", "Judas", "Diamond", "Enigma"];
-const agentNouns= ["Guzzler", "Dingler", "Dribbler", "Slayer", "Killah", "Haunter", "Screecher", "Biter", "Caller", "Romancer", "Lover", "Kisser", "Sinner", "Chaser", "Clapper", "Popper", "Raver", "Drinker", "Hooker", "Bedazzler", "Bumper", "Humper", "Hacker", "Fluffer", "Sniffer", "Smoosher"];
+const prefix=["The", "Queen", "Countess", "Lord", "Princess", "Doctor", "Supreme", "Baroness", "Madame", "Sassy", "Royal", "Sis", "Count", "Monsieur", "A One", "Madmoisette", "Mister", "Mother", "Father", "Professor", "Lady", "The Incomparable", "Infamous", "Seniorita", "Governess", "Judge", "Duchess", "Empress","Viscount", "Highness","Majesty","Baron","Sovereign","Knight","Marquis","Regent"
+ ];
+const nouns = [
+  "Lala", "Mimi", "DooDoo", "Tata", "Nini", "Bobo", "Wawa", "Zuzu", "Fafa", "Kiki", "Peepee", "TikiTiki",
+  "Lulu", "Momo", "Yaya", "Dada", "Zaza", "Bubu", "Hihi", "BamBam", "Tutu", "ZingZing", "PooPoo", "Meemee",
+  "Rara", "Chacha", "DingDong", "YipYip", "NoNo", "Bamoo", "Gigi", "Teehee", "WooWoo", "Nana", "Zappy",
+  "MooMoo", "Beebee", "Lili", "PipPip", "Goo Goo", "Boo Boo", "Zimzi", "Zabba", "Zeppy", "Yoyo", "Haha",
+  "Hehe", "YumYum", "Poopsie", "AhHa", "Bebe", "ZibZib", "Tootoo", "Blinky", "Snugglebug", "Wiggy", "Tippy",
+  "Nono", "Fizzy", "BlinkyBlink", "Mushy", "TingTing", "Babba", "Zoodle", "Wiggly", "BingBing", "Sniffy",
+  "Dizzy", "TugTug", "BloopBloop", "Momoji"
+];
+const agentNouns= [
+  "Dribbler", "Zombie", "Dance", "Joanne", "Smoosher", "Gucci", "Caller", "Pinot Grigio", "Dope", "Shadow",
+  "Harlequin", "Sniffer", "Popper", "Gypsy", "Slayer", "Beat", "Bedazzler", "Swine", "Unicorn", "Fame",
+  "Raver", "Sinner", "Hooker", "Chaser", "Fluffer", "Diamond", "Kisser", "Fashion", "Guzzler", "Aura",
+  "Judas", "Mayhem", "Lover", "Bumper", "Dingler", "Screecher", "Beast", "Venus", "Haunter", "Celebrity",
+  "Enigma", "Mary Jane", "Patrizia", "Hacker"
+];
 const messages = [
   {message: "You've given me a million reasons to keep going Little Monster. I love you! XOXO, Joanne.",
 url: "https://m.media-amazon.com/images/I/71In1faVvIL._AC_UY218_.jpg",
