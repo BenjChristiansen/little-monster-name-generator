@@ -1,7 +1,7 @@
 const firstName=document.getElementById("first-name"); 
 const lastName=document.getElementById("last-name");
 const button=document.getElementById("generate-name");
-const
+const paragraph=document.getElementById("paragraph);
 nameDisplay=document.getElementById("name-display");
 errorMessage=document.getElementById("error-message");
 const message=document.getElementById("message");
@@ -106,6 +106,7 @@ function fieldChecker() {
 
   if (first && last) {
     errorMessage.textContent = ""; 
+    paragraph.textContent = "";
 
     const normalizedFullName = fullName.replace(/\s+/g, " ");
     if (
@@ -123,6 +124,7 @@ function fieldChecker() {
     message.textContent = "";
     img.src = "";
     errorMessage.textContent = "Grrrr... A first and last name is needed to make your Little Monster name.";
+    paragraph.textContent="";
 img.src="https://m.media-amazon.com/images/I/51+5rwULThL._AC_UY218_.jpg";
   }
 }
